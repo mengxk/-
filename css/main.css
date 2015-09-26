@@ -1,0 +1,38 @@
+/*base*/
+body { font-family: "微软雅黑"; }
+.fl { float: left; display: inline; }
+.fr { float: right; display: inline; }
+.w { width: 100%; }
+.overflow { overflow: hidden; }
+.table-cell{ display:table-cell; vertical-align: middle;}
+/*bg*/
+.bg-A48{ background:#A4835B!important;}
+
+/*reset*/
+.ui-bar{ padding:0; border:none;}
+.ui-link{ margin:0; padding:0;  border:none;}
+
+/*search*/
+#search-header { height: 100px; background: #F9F9F9; }
+#search-header .form-search { margin-right: 80px }
+#search-header .ui-btn { display: block; }
+#search-header .ui-input-search{ margin-top:20px}
+#search-header .ui-input-search:after { padding-left: 15px; margin-top:0; width: 25px; height: 52px; top: 0; background: url(../images/icon-1.png) 0.5em center no-repeat; }
+#search-header .ui-input-search input { height:54px; padding: 0 0 0 2.75em; font-size: 18px; }
+#search-header .ui-input-search .ui-btn-yuyin { position: absolute; top: 0; right: 0; width: 40px; height: 54px; background: url(../images/icon-2.png) center center no-repeat; }
+#search-header .ui-btn-saomiao { top:10px; right: 20px; padding: 0; width: 47px; height: 37px; background: url(../images/icon-3.png) no-repeat; }
+#search-header .header { position: relative; padding: 0 15px; }
+#main { background: #fff; }
+/*帘盟商城*/
+#main .ui-bar{ padding:0;}
+#main .ui-grid-lmsc .ui-link{ margin:0; padding:0;}
+#main .ui-grid-lmsc .ui-link .box-img{ display:table-cell; vertical-align: middle; width:90px; height:90px; border-radius: 50px;}
+#main .ui-grid-lmsc .ui-link .box-img img{ }
+
+#footer{ border:none;}
+#footer .ui-bar{}
+#footer .ui-bar .ui-link{ width:100%; border:none; border-radius: 0; background:#A4835B;}
+#footer .ui-bar .ui-link:hover,
+#footer .ui-bar .selected{ background:#876C4B;}
+#footer .ui-bar .ui-link p{ margin:0.2em 0 0 0; font-size:1.6em; color:#fff; font-weight:normal; font-family: "微软雅黑";}
+#footer .ui-grid-c>div{ border:none;}
