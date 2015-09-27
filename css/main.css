@@ -1,5 +1,6 @@
 /*base*/
-body { font-family: "微软雅黑"; }
+body { font-family: "microsoft yahei"; font-weight:normal;}
+*{ font-weight:normal; font-family: "microsoft yahei";}
 .fl { float: left; display: inline; }
 .fr { float: right; display: inline; }
 .w { width: 100%; }
@@ -7,16 +8,28 @@ body { font-family: "微软雅黑"; }
 .table-cell{ display:table-cell; vertical-align: middle;}
 /*bg*/
 .bg-A48{ background:#A4835B!important;}
+.bg-099{ background:#009999!important;}
+.bg-f60{ background:#ff6600!important;}
+.bg-69c{ background:#6699cc!important;}
+.bg-f30{ background:#ff3300!important;}
+.bg-f90{ background:#ff9900!important;}
+.bg-3c3{ background:#33cc33!important;}
+.bg-c69{ background:#cc6699!important;}
+
+/*margin padding*/
+.p0{ padding:0!important;}
 
 /*reset*/
+.h1{ height:1.6em; line-height:1.6em; font-size:1.8em; text-align: center; font-weight:normal;}
 .ui-bar{ padding:0; border:none;}
-.ui-link{ margin:0; padding:0;  border:none;}
+#main .ui-link{ margin:0; padding:0;  border:none; border-radius: 0; background:#fff; text-shadow:none;}
+body .ui-icon-lmsc{background:#fff;}
 
 /*search*/
-#search-header { height: 100px; background: #F9F9F9; }
+#search-header { padding:0.815em 0; background: #F9F9F9; }
 #search-header .form-search { margin-right: 80px }
 #search-header .ui-btn { display: block; }
-#search-header .ui-input-search{ margin-top:20px}
+#search-header .ui-input-search{}
 #search-header .ui-input-search:after { padding-left: 15px; margin-top:0; width: 25px; height: 52px; top: 0; background: url(../images/icon-1.png) 0.5em center no-repeat; }
 #search-header .ui-input-search input { height:54px; padding: 0 0 0 2.75em; font-size: 18px; }
 #search-header .ui-input-search .ui-btn-yuyin { position: absolute; top: 0; right: 0; width: 40px; height: 54px; background: url(../images/icon-2.png) center center no-repeat; }
@@ -24,15 +37,70 @@ body { font-family: "微软雅黑"; }
 #search-header .header { position: relative; padding: 0 15px; }
 #main { background: #fff; }
 /*帘盟商城*/
-#main .ui-bar{ padding:0;}
-#main .ui-grid-lmsc .ui-link{ margin:0; padding:0;}
-#main .ui-grid-lmsc .ui-link .box-img{ display:table-cell; vertical-align: middle; width:90px; height:90px; border-radius: 50px;}
-#main .ui-grid-lmsc .ui-link .box-img img{ }
+#main .ui-grid-lmsc .ui-link{ position:relative; margin:0; padding:0; }
+#main .ui-grid-lmsc .ui-link .ui-icon-lmsc{ padding:0 5%;}
+#main .ui-grid-lmsc .ui-link .box-img{ margin:0 auto; padding:17% 0; width:100%; max-width:85px; max-height:85px; border-radius: 100px;}
+#main .ui-grid-lmsc .ui-link .box-img img{ height:39px; }
+#main .ui-grid-lmsc .ui-link p{ font-size:1.2em; font-family: "microsoft yahei"; font-weight:normal;}
+/*精选商品*/
+#main .ui-grid-jxsp{padding-bottom:0.6em;}
+#main .ui-grid-jxsp .ui-block-a{ padding-right:0.6em;}
+#main .ui-grid-jxsp .ui-block-b{ padding:0 0.3em;}
+#main .ui-grid-jxsp .ui-block-c{ padding-left:0.6em;}
+#main .ui-grid-jxsp .ui-link .box-img{ text-align:left;}
+#main .ui-grid-jxsp .ui-link .box-img img{ width:100%;  max-width:11.25em; max-height:7.875em;}
+#main .ui-grid-jxsp .ui-link p{ text-align:left;}
+#main .ui-grid-jxsp .ui-link p.name{margin:0;  height:1.4em; line-height:1.4em;}
+#main .ui-grid-jxsp .ui-link p.price{margin:0; font-size:1.4em; color: #f60; line-height:1.4em;}
+/*帘盟商城2*/
+#main .ui-grid-lmsc2{ padding-bottom:0.6em;}
+#main .ui-grid-lmsc2 .ui-link .ui-icon-lmsc{padding:1em 0; background:#A4835B;}
+#main .ui-grid-lmsc2 .ui-block-a{ padding-right:0.6em;}
+#main .ui-grid-lmsc2 .ui-block-b{ padding:0 0.3em;}
+#main .ui-grid-lmsc2 .ui-block-c{ padding-left:0.6em;}
+#main .ui-grid-lmsc2 .ui-link .box-img img{ height:40px;}
+#main .ui-grid-lmsc2 .ui-link p.name{margin:0; color:#fff;}
+/*才你喜欢*/
+#main .ui-grid-cnxh{padding-bottom:0.6em;}
+#main .ui-grid-cnxh .ui-bar{background:#fff; border:1px solid #ddd;}
+#main .ui-grid-cnxh .ui-block-a{ padding-right:0.6em;}
+#main .ui-grid-cnxh .ui-block-b{ padding-left:0.6em;}
+#main .ui-grid-cnxh .ui-link{ box-shadow:none;}
+#main .ui-grid-cnxh a.name img{ width: 100%;}
+#main .ui-grid-cnxh a.name p{ padding:0 0.5em; margin:0.5em 0; text-align:left;}
+#main .ui-grid-cnxh p.price{ margin:0 5px; line-height:3em; border-top:1px dashed #ddd;}
+#main .ui-grid-cnxh p.price .fl{ color:#f60; text-shadow:none; text-decoration: none; font-size:1.6em; font-weight:normal;}
+#main .ui-grid-cnxh p.price .fr{ width:3em; height:3em; background:url(../images/icon-xihuan.png) center center no-repeat;}
+/*采购需求*/
+#main .ui-lisview-cgxq{margin:0;}
+#main .ui-lisview-cgxq li{border-top:1px dashed #ddd;}
+#main .ui-lisview-cgxq li.ui-last-child{border-bottom:1px dashed #ddd;}
+#main .ui-lisview-cgxq a{ float:left; padding:0; height:2em; line-height:2em;  margin:0; font-family: "microsoft yahei"; font-weight: normal; background: #fff; border:none; text-decoration:none;}
+#main .ui-lisview-cgxq a.name{ width:30%;}
+#main .ui-lisview-cgxq a.num{ width:20%; color:#999;}
+#main .ui-lisview-cgxq a.price{ width:20%; color:#f60;}
+#main .ui-lisview-cgxq a.baojia{width:30%; }
+#main .ui-lisview-cgxq a.baojia b{display:inline-block;padding:0 0.5em; text-shadow: none; background:#f60; color:#fff; border:1px solid #f60;}
+#main .ui-lisview-cgxq a.baojia span{ display:inline-block; border:1px solid #f60; padding:0 1em; background:#fff; color:#f60;}
+#main .ui-lisview-cgxq a.last{ display:none;}
+/*loading*/
+.loading{ line-height:4em; text-align: center;}
+.loading img{ padding:4px; background:#ddd; border-radius: 15px; vertical-align: middle;}
+.loading span{ color:#ddd;}
+
 
 #footer{ border:none;}
 #footer .ui-bar{}
-#footer .ui-bar .ui-link{ width:100%; border:none; border-radius: 0; background:#A4835B;}
+#footer .ui-bar .ui-link{ margin:0; padding:0.8em 0; width:100%; border:none; border-radius: 0; background:#A4835B;}
 #footer .ui-bar .ui-link:hover,
 #footer .ui-bar .selected{ background:#876C4B;}
-#footer .ui-bar .ui-link p{ margin:0.2em 0 0 0; font-size:1.6em; color:#fff; font-weight:normal; font-family: "微软雅黑";}
+#footer .ui-bar .ui-link p{ margin:0.2em 0 0 0; text-shadow: none;; font-size:1.4em; color:#fff; font-weight:normal; font-family: "微软雅黑";}
 #footer .ui-grid-c>div{ border:none;}
+
+/*分类*/
+#main .ui-listview-fenlei{ width:25%;}
+#main .ui-listview-fenlei a{padding:0; padding-left:5px; border-radius: 0; line-height:4em; font-weight:normal; text-align:center; font-size:1.2em;font-family: "microsoft yahei";}
+#main .ui-listview-fenlei a:after{ display:none;}
+#main .ui-listview-fenlei a.ui-btn-active{ background:#fff; padding:0; color:#f60; border:none; border-left:5px solid #A4835B;}
+#main .ui-listview-fenlei a.ui-btn:focus{box-shadow: 0 0 12 #ddd;}
+#main .box-fenlei{ margin-left:25%;}
