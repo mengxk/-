@@ -12,14 +12,20 @@
 		<link type="text/css" rel="stylesheet" href="../css/414.css" media="screen and (min-width:414px)" />
 		<script src="../js/jquery.min.js"></script>
 		<script src="../js/jquery.mobile-1.4.5.min.js"></script>
+		<script src="../js/main.js"></script>
 	</head>
 
 	<body>
 		<div data-role="page">
 			<!-- header start -->
 			<div id="search-header" data-role="header" data-position="fixed">
-				<div class="header">
-					<a class="fr ui-btn-saomiao ui-btn-right" href=""></a>
+				<div class="header header-return">
+					<a class="return ui-btn-left" href="#">
+						<img src="../images/icon-goBack.png" alt="" />
+					</a>
+					<a class="ui-btn-fun ui-btn-right" href="#">
+						<img src="../images/icon-more.png" alt="" />
+					</a>
 					<form class="form-search">
 						<div class="ui-input-search ui-body-inherit ui-corner-all ui-shadow-inset ui-input-has-clear">
 							<input data-type="search" data-enhanced="true" data-inset="false" id="pre-rendered-example-input" placeholder="百叶窗帘" value="" data-lastval="">
@@ -34,60 +40,113 @@
 						</div>
 					</form>
 				</div>
+				<div class="ui-grid-c ui-grid-screen">
+					<div class="ui-block-a active">
+						<div class="ui-bar ui-bar-a">
+							<a href="#">综合</a>
+						</div>
+					</div>
+					<div class="ui-block-b">
+						<div class="ui-bar ui-bar-a">
+							<a href="#">销量<img src="../images/icon-up.png" alt="" /></a>
+						</div>
+					</div>
+					<div class="ui-block-c">
+						<div class="ui-bar ui-bar-a">
+							<a href="#">价格<img src="../images/icon-down.png" alt="" /></a>
+						</div>
+					</div>
+					<div class="ui-block-d">
+						<div class="ui-bar ui-bar-a">
+							<a href="#">筛选</a>
+						</div>
+					</div>
+				</div>
 			</div>
 			<!-- header end -->
 
 			<!-- main start -->
 			<div id="main" role="main" class="ui-content">
-
-			</div>
-			<!-- main end -->
-
-			<!-- footer start -->
-			<div id="footer" data-role="footer" data-position="fixed">
-				<div class="ui-grid-c">
-					<div class="ui-block-a">
-						<div class="ui-bar ui-bar-a">
-							<a href="">
-								<img src="../images/icon-11.png" alt="首页" />
-								<p>首页</p>
-							</a>
-						</div>
-					</div>
-					<div class="ui-block-b">
-						<div class="ui-bar ui-bar-a">
-							<div class="ui-bar ui-bar-a">
-								<a class="selected" href="">
-									<img src="../images/icon-12.png" alt="分类" />
-									<p>分类</p>
-								</a>
+				<div class="box-commodity">
+					<a href="#" class="fl box-img">
+						<img src="../images/gwc-1.png" alt="" />
+					</a>
+					<div class="fl box-detail">
+						<p class="link">
+							<a href="#">灰色麻布 纯色彩色粗亚麻棉麻布料 背景窗帘装饰手工DIY面料-象牙白-麻布...</a>
+						</p>
+						<p class="color-f60 price">￥ 6.90</p>
+						<div class="overflow box-cjl">
+							<div class="fl">
+								成交量<span class="color-f60">214</span>
+							</div>
+							<div class="fl">
+								评论<span class="color-f60">0</span>
 							</div>
 						</div>
 					</div>
-					<div class="ui-block-c">
-						<div class="ui-bar ui-bar-a">
-							<div class="ui-bar ui-bar-a">
-								<a href="">
-									<img src="../images/icon-13.png" alt="购物车" />
-									<p>购物车</p>
-								</a>
+				</div>
+				<div class="box-commodity">
+					<a href="#" class="fl box-img">
+						<img src="../images/gwc-1.png" alt="" />
+					</a>
+					<div class="fl box-detail">
+						<p class="link">
+							<a href="#">灰色麻布 纯色彩色粗亚麻棉麻布料 背景窗帘装饰手工DIY面料-象牙白-麻布...</a>
+						</p>
+						<p class="color-f60 price">￥ 6.90</p>
+						<div class="overflow box-cjl">
+							<div class="fl">
+								成交量<span class="color-f60">214</span>
+							</div>
+							<div class="fl">
+								评论<span class="color-f60">0</span>
 							</div>
 						</div>
 					</div>
-					<div class="ui-block-d">
-						<div class="ui-bar ui-bar-a">
-							<div class="ui-bar ui-bar-a">
-								<a href="">
-									<img src="../images/icon-14.png" alt="我的" />
-									<p>我的</p>
-								</a>
+				</div>
+				<div class="box-commodity">
+					<a href="#" class="fl box-img">
+						<img src="../images/gwc-1.png" alt="" />
+					</a>
+					<div class="fl box-detail">
+						<p class="link">
+							<a href="#">灰色麻布 纯色彩色粗亚麻棉麻布料 背景窗帘装饰手工DIY面料-象牙白-麻布...</a>
+						</p>
+						<p class="color-f60 price">￥ 6.90</p>
+						<div class="overflow box-cjl">
+							<div class="fl">
+								成交量<span class="color-f60">214</span>
+							</div>
+							<div class="fl">
+								评论<span class="color-f60">0</span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="box-commodity">
+					<a href="#" class="fl box-img">
+						<img src="../images/gwc-1.png" alt="" />
+					</a>
+					<div class="fl box-detail">
+						<p class="link">
+							<a href="#">灰色麻布 纯色彩色粗亚麻棉麻布料 背景窗帘装饰手工DIY面料-象牙白-麻布...</a>
+						</p>
+						<p class="color-f60 price">￥ 6.90</p>
+						<div class="overflow box-cjl">
+							<div class="fl">
+								成交量<span class="color-f60">214</span>
+							</div>
+							<div class="fl">
+								评论<span class="color-f60">0</span>
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
-			<!-- footer end -->
+			<!-- main end -->
 
+			<div id="goTop"></div>
 		</div>
 	</body>
 
