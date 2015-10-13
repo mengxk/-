@@ -19,49 +19,65 @@
 		<div data-role="page">
 			<div class="panel-shaixuan" data-role="panel" id="right-panel" data-display="overlay" data-position="right">
 				<h1 class="text-center">
-					<a class="cancel" data-rel="close">取消</a>
+					<a class="cancel" data-rel="close">
+						<img src="../images/icon-goBack.png" alt="" />
+					</a>
 					<a class="confirm" data-rel="close">确定</a>
-					筛选
+					品牌
 				</h1>
-				<ul class="box-nav list-shaixuan">
-					<li>
-						<a>全部分类</a>
-					</li>
-					<li class="item">
-						<a>规格</a>
+				<div data-role="tabs" id="tabs" class="tabs-pinpai">
+					<div data-role="navbar">
 						<ul>
+							<li><a href="#one" data-ajax="false">推荐品牌</a></li>
+							<li><a href="#two" data-ajax="false">字母排序</a></li>
+						</ul>
+					</div>
+					<div id="one" class="ui-body-d ui-content p0">
+						<ul class="box-nav list-shaixuan">
 							<li>
-								<a>布艺帘面料</a>
-								<ul>
-									<li>
-										<a href="index.html">纯棉</a>
-									</li>
-									<li>
-										<a href="#">麻</a>	
-									</li>
-									<li>
-										<a href="#">真丝</a>
-									</li>
-								</ul>
+								<a>全部分类</a>
 							</li>
 							<li>
-								<a href="#">卷帘/天棚帘面料</a>
+								<a>先锋</a>
 							</li>
 							<li>
-								<a href="#">艺术帘面料</a>
+								<a>西大门</a>
+							</li>
+							<li>
+								<a>玉马</a>
+							</li>
+							<li>
+								<a>荣德</a>
+							</li>
+							<li>
+								<a>法拉利</a>
 							</li>
 						</ul>
-						<span>全部</span>
-					</li>
-					<li class="item">
-						<a>颜色</a>
-						<span>全部</span>
-					</li>
-					<li class="item">
-						<a>品牌</a>
-						<span>全部</span>
-					</li>
-				</ul>
+					</div>
+					<div id="two">
+						<ul class="box-nav list-shaixuan">
+							<li>
+								<a>全部分类222</a>
+							</li>
+							<li>
+								<a>先锋</a>
+							</li>
+							<li>
+								<a>西大门</a>
+							</li>
+							<li>
+								<a>玉马</a>
+							</li>
+							<li>
+								<a>荣德</a>
+							</li>
+							<li>
+								<a>法拉利</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				
 			</div><!-- /panel -->
 			<!-- header start -->
 			<div id="search-header" data-role="header" data-position="fixed">
